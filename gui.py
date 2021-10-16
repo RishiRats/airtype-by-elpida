@@ -6,17 +6,18 @@ import webbrowser
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path("./assets")
+ASSETS_PATH = OUTPUT_PATH / Path("../assets")
 
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
 def core():
+    window.destroy()
     import main.py
 
 
-webbrowser.open("www.google.com")
+#webbrowser.open("www.google.com")
 
 window = Tk()
 
