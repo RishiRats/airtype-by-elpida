@@ -6,7 +6,7 @@ import webbrowser
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path("../assets")
+ASSETS_PATH = OUTPUT_PATH / Path("./assets")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -17,7 +17,7 @@ def core():
     import main.py
 
 
-#webbrowser.open("www.google.com")
+webbrowser.open("https://dev-elpida.netlify.app/")
 
 window = Tk()
 
