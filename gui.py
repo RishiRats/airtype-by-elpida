@@ -4,9 +4,10 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 import webbrowser
 
+import main
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path("./assets")
+ASSETS_PATH = OUTPUT_PATH / Path("all_sources/assets")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -14,7 +15,7 @@ def relative_to_assets(path: str) -> Path:
 
 def core():
     window.destroy()
-    import main.py
+    main.main()
 
 
 webbrowser.open("https://dev-elpida.netlify.app/")
